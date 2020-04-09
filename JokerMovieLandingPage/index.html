@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joker</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="./assets/logo.png" alt="Logo"></a>
+        <div class="toggle"><img src="./assets/toggle.png" ></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2>Put on a <span>Happy</span> face</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam tenetur sequi, sapiente 
+            dolore, nostrum consequuntur aut praesentium fugit magnam nemo natus dolorem provident. Sequi 
+            incidunt deserunt voluptas laudantium ipsum amet.</p>
+            <a href="#" class="play" onclick="toggle()"><img src="./assets/play.png">Watch Trailer</a>
+            <div class="slide"></div>
+            <ul class="sci">
+                <li><a href="#"><img src="./assets/facebook.png" ></a></li>
+                <li><a href="#"><img src="./assets/twitter.png" ></a></li>
+                <li><a href="#"><img src="./assets/instagram.png" ></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="./assets/Trailer.mp4" controls="true"></video>
+        <img src="./assets/close.png" class="close" onclick="toggle()">
+    </div>
+    
+    <script type="text/javascript">
+        function toggle(){
+            var trailer = document.querySelector('.trailer');
+            var video = document.querySelector('video');
+            trailer.classList.toggle('active');
+            video.currentTime = 0;
+            video.pause();
+        }
+    </script>
+
+</body>
+</html>

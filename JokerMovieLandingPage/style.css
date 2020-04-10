@@ -57,7 +57,8 @@ header .logo img, header .toggle img{
 }
 
 .banner .content h2 span{
-    font-weight: 800;
+    color: red;
+    font-weight: bold;
 }
 
 .banner .content p{
@@ -119,7 +120,7 @@ header .logo img, header .toggle img{
     height: 150px;
     background: url('./assets/joker.png');
     background-size: cover;
-    animation: animate 25s linear infinite;
+    animation: animate 20s linear infinite;
 }
 @keyframes animate{
     0%,100%{
